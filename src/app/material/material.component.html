@@ -1,1 +1,11 @@
-<p>material works!</p>
+<h2>My Heroes of material</h2>
+<h2>agrega al heroe en el boton de heroes jeje</h2>
+<div>
+    <label>Hero name:
+      <input #heroName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(heroName.value); heroName.value=''">
+      add
+    </button>
+  </div>
